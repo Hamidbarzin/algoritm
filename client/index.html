@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css" />
+    <title>داشبورد ساختار پروژه تحلیل ارز دیجیتال</title>
+    <style>
+      :root {
+        --primary: #3498db;
+        --primary-dark: #2980b9;
+        --secondary: #2ecc71;
+        --secondary-dark: #27ae60;
+        --tertiary: #9b59b6;
+        --tertiary-dark: #8e44ad;
+        --dark: #222f3e;
+        --light: #f9fafe;
+        --gray: #95a5a6;
+        --success: #2ecc71;
+        --warning: #f39c12;
+        --danger: #e74c3c;
+        --text-dark: #2c3e50;
+        --text-light: #ecf0f1;
+      }
+
+      body {
+        font-family: 'Vazirmatn', sans-serif;
+      }
+
+      /* RTL-specific overrides */
+      .tree-expander {
+        transition: transform 0.3s ease;
+      }
+      .tree-expander.expanded {
+        transform: rotate(90deg);
+      }
+      
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #c1c1c1;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #3498db;
+      }
+
+      /* Background coloring for different sections */
+      .bg-primary {
+        background-color: var(--primary);
+      }
+      .bg-secondary {
+        background-color: var(--secondary);
+      }
+      .bg-tertiary {
+        background-color: var(--tertiary);
+      }
+      .bg-success {
+        background-color: var(--success);
+      }
+      .bg-warning {
+        background-color: var(--warning);
+      }
+      .bg-danger {
+        background-color: var(--danger);
+      }
+      
+      /* Text coloring */
+      .text-primary {
+        color: var(--primary);
+      }
+      .text-secondary {
+        color: var(--secondary);
+      }
+      .text-tertiary {
+        color: var(--tertiary);
+      }
+      .text-success {
+        color: var(--success);
+      }
+      .text-warning {
+        color: var(--warning);
+      }
+      .text-danger {
+        color: var(--danger);
+      }
+      
+      /* File preview content styling */
+      pre {
+        font-family: monospace;
+        white-space: pre-wrap;
+        line-height: 1.5;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </body>
+</html>
